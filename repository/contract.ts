@@ -5,9 +5,9 @@ export class ContractRepository {
     db : Promise<mangodb.Db>;
     collection : string;
 
-    constructor() {
+    constructor(collectionName: string) {
         this.db = makeDb()
-        this.collection = "contracts"
+        this.collection = collectionName;
     }
 
     findAll = async () => {

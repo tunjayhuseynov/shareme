@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title></title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+        <link rel="stylesheet" href="/css/tailwind.css">
+        <link rel="stylesheet" href="/dist/bundle.css">
+        <script src="/dist/main-bundle.js" defer></script>
+        <script src="/dist/bundle.js" defer></script>
+    </head>
+    <body>
+        <section id="reg" class="flex flex-row items-center justify-center h-screen">
+            <div class="w-[65%] h-[50%] md:w-[50%] md:h-[75%] lg:w-[35%] lg:h-[50%] bg-yellow-600">
+                <div class="mdc-tab-bar" role="tablist">
+                    <div class="mdc-tab-scroller">
+                      <div class="mdc-tab-scroller__scroll-area">
+                        <div class="mdc-tab-scroller__scroll-content">
+                            <button class="mdc-tab" role="tab" aria-selected="false" tabindex="0">
+                              <span class="mdc-tab__content">
+                                <span class="mdc-tab__icon material-icons" aria-hidden="true">favorite</span>
+                                <span class="mdc-tab__text-label">Influncer</span>
+                              </span>
+                              <span class="mdc-tab-indicator">
+                                <span class="mdc-tab-indicator__content mdc-tab-indicator__content--underline"></span>
+                              </span>
+                              <span class="mdc-tab__ripple"></span>
+                            </button>
+                          <button class="mdc-tab mdc-tab--active" role="tab" aria-selected="true" tabindex="0">
+                            <span class="mdc-tab__content">
+                              <span class="mdc-tab__icon material-icons" aria-hidden="true">favorite</span>
+                              <span class="mdc-tab__text-label">Customer</span>
+                            </span>
+                            <span class="mdc-tab-indicator mdc-tab-indicator--active">
+                              <span class="mdc-tab-indicator__content mdc-tab-indicator__content--underline"></span>
+                            </span>
+                            <span class="mdc-tab__ripple"></span>
+                          </button>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div id="tabsbody" class="flex flex-row-reverse flex-nowrap overflow-x-hidden">
+                        <div id="influncer" class="tabbody min-w-full" data-index="1">
+                            Salam
+                        </div>
+                        <div id="customer" class="tabbody min-w-full" data-index="0">
+                            necesen
+                        </div>
+                  </div>
+            </div>
+        </section>
+
+    </body>
+</html>
